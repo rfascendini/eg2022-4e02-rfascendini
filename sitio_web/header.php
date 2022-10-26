@@ -6,9 +6,12 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarColor01">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item px-2"><a class="nav-link active" aria-current="page" href="">Inicio</a></li>
-                <li class="nav-item px-2"><a class="nav-link" href="">FAQs</a></li>
-                <li class="nav-item px-2"><a class="nav-link" href="contacto.php">Contacto</a></li>
+                <li class="nav-item px-2"><a class="nav-link active" aria-current="page" href="index.php">INICIO</a></li>
+                <li class="nav-item px-2"><a class="nav-link" href="vacantes.php">VACANTES DISPONIBLES</a></li>
+                <li class="nav-item px-2"><a class="nav-link" href="resultados.php">RESULTADOS</a></li>
+                <li class="nav-item px-2"><a class="nav-link" href="seleccion.php">SELECCIÓN DE PERSONAL</a></li>
+                <li class="nav-item px-2"><a class="nav-link" href="seleccion.php">FAQS</a></li>
+                <li class="nav-item px-2"><a class="nav-link" href="contacto.php">CONTACTO</a></li>
             </ul>
             <div class="d-flex justify-content-end">
                 <a href="" class="btn btn-outline-light mx-2">Registrarse</a>

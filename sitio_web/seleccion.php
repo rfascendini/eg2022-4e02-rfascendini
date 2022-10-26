@@ -8,12 +8,14 @@
 <?php include ("css.php"); ?>
 </head>
 
-<body class="bg-secondary bg-gradient">
+<body class="bg-secondary">
 
   <!-- HEADER  -->
   <?php include("header.php"); ?>
 
-  
+  <div class="container">
+
+  </div>
 
   <!-- FOOTER  -->
   <?php include("footer.php"); ?>

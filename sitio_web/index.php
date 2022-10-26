@@ -16,8 +16,8 @@
   <!-- SECCION COVER PRESENTACIÓN -->
   <section>
 
-    <div class="bg-dark align-items-center d-flex justify-content-center text-center" id="cover" style="height:60vh; margin-top:-60px">
-      <h1 class="text-white display-1">¡Bienvenidos al nuevo <br>Módulo de Vacantes<br>de la UTN FRRo!</h1>
+    <div class="bg-dark align-items-center d-flex justify-content-center text-center" id="cover" style="height:50vh; margin-top:-60px">
+      <h1 class="text-white display-5">¡Bienvenidos al nuevo Módulo de Vacantes de la UTN FRRo!</h1>
     </div>
 
   </section>
@@ -49,7 +49,7 @@
             <div class="card-body text-center d-flex justify-content-center align-content-between flex-wrap">
               <h1 class="my-1 lh-1 fw-bold">Listas de Resultados</h1>
               <p class="card-text m-0">Los resultados de las evaluaciones realizadas por las autoridades serán publicadas en ésta sección.</p>
-              <a href="" class="mb-2 btn btn-outline-light">Listar Resultados</a>
+              <a href="resultados.php" class="mb-2 btn btn-outline-light">Listar Resultados</a>
             </div>
           </div>
         </div>
