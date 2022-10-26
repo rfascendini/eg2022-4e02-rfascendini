@@ -1,0 +1,76 @@
+Consulta a una base de datos: Para comenzar la comunicación con un servidor de base de datos MySQL, es
+necesario abrir una conexión a ese servidor. Para inicializar esta conexión, PHP ofrece la función
+
+RESPUESTA --> mysqli_connect()
+
+………………………………………………………………………………………
+Todos sus parámetros son opcionales, pero hay tres de ellos que generalmente son necesarios:
+
+RESPUESTA --> $conexion = mysqli_connect("servidor","usuario","contraseña","nombre de la base de datos (opcional)")
+
+………………………………………………………………………………………….
+Una vez abierta la conexión, se debe seleccionar una base de datos para su uso, mediante la función
+
+RESPUESTA -->mysqli_select_db()
+
+………………………………………………………………………………………….
+Esta función debe pasar como parámetro
+
+RESPUESTA --> mysqli_select_db("nombre de la base de datos");
+
+……………………………………………………………………………………
+La función mysqli_query () se utiliza para
+
+RESPUESTA --> Realizar una consulta a la base de datos.
+
+…………………………………………………………………………………………
+y requiere como parámetros
+
+RESPUESTA:
+
+$consulta = "SELECT * FROM ..."
+            "INSERT INTO ..."
+            "DELETE ..."
+            "UPDATE table SET ... WHERE ..."
+
+($conexion,$consulta)
+
+…………………………………………………………………………………………
+La cláusula or die() se utiliza para
+
+RESPUESTA --> Una cadena de caracteres que describe el error de la conexión 
+
+…………………………………………………………………………………………
+y la función mysqli_error () se puede usar para
+
+RESPUESTA --> Devolver el último mensaje de error para la llamada más reciente a una función de mysqli que pudo haberse ejecutado correctamente o haber fallado.
+
+…………………………………………………………………………………………
+Si la función mysqli_query() es exitosa, el conjunto resultante retornado se almacena en una variable, por ejemplo
+$vResult, y a continuación se puede ejecutar el siguiente código (explicarlo):
+
+<?php
+while ($fila = mysqli_fetch_array($vResultado))
+{
+?>
+<tr>
+ <td><?php echo ($fila[0]); ?></td>
+ <td><?php echo ($fila[1]); ?></td>
+ <td><?php echo ($fila[2]); ?></td>
+</tr>
+<tr>
+ <td colspan="5">
+<?php
+}
+mysqli_free_result($vResultado);
+mysqli_close($link);
+?>
+
+RESPUESTA --> 
+
+La función mysqli_fetch_array tendrá como parametro la $vResultado que tendrá asignada la función 
+mysqli_query junto con la conexión y la consulta y se guardarán todos aquellos registros de la consulta.
+
+Por lo que al realizar un while de cada uno de ellos, imprimira en una tabla, cada registro con sus respectivos atributos que estarán
+posicionados en las diferentes posiciones del arreglo indicados en los [] e imprimira los valores en las filas y columnas.
+
